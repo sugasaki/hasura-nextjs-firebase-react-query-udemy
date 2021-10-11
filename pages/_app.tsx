@@ -1,11 +1,12 @@
 import '../styles/globals.css'
-import React, { useState } from 'react'
+import { useState } from 'react'
+import { QueryClient, QueryClientProvider } from 'react-query'
+import { ReactQueryDevtools } from 'react-query/devtools'
 import { AppProps } from 'next/app'
 import { useUserChanged } from '../hooks/useUserChanged'
 import { Provider } from 'react-redux'
 import { store } from '../app/store'
-import { Hydrate, QueryClient, QueryClientProvider } from 'react-query'
-import { ReactQueryDevtools } from 'react-query/devtools'
+import { Hydrate } from 'react-query/hydration'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const {} = useUserChanged()

@@ -65,4 +65,6 @@ module.exports = {
       },
     },
   },
+  root: true,
+  ignorePatterns: ['.eslintrc.js'],
 }

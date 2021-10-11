@@ -1,5 +1,6 @@
 import Cookie from 'universal-cookie'
-import firebase from '../firebaseConfig'
+import { signOut } from 'firebase/auth'
+import { auth } from '../firebaseConfig'
 import { unSubMeta } from './useUserChanged'
 import { useQueryClient } from 'react-query'
 import { useDispatch } from 'react-redux'
@@ -20,7 +21,7 @@ export const useLogout = () => {
     dispatch(resetEditedNews())
 
     // firebase Logout
-    await firebase.auth().signOut()
+    await signOut(auth)
 
     // キャッシュ削除
     queryClient.removeQueries('tasks')

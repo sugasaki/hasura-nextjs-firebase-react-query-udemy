@@ -5,10 +5,10 @@ import {
   SwitchVerticalIcon,
 } from '@heroicons/react/solid'
 import { useFirebaseAuth } from '../hooks/useFirebaseAuth'
-import firebase from '../firebaseConfig'
+import { auth } from '../firebaseConfig'
 
 export const Auth: VFC = () => {
-  const user = firebase.auth().currentUser
+  const user = auth.currentUser
   const {
     isLogin,
     email,
@@ -55,7 +55,7 @@ export const Auth: VFC = () => {
         onClick={toggleMode}
       />
       {user && (
-        <Link href="/tasks">
+        <Link href="/tasks" passHref>
           <div className="flex items-center cursor-pointer my-3">
             <ChevronDoubleRightIcon className="h-5 w-5 mx-1 text-blue-500" />
             <span>to tasks page</span>
