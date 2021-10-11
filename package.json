@@ -1,0 +1,36 @@
+{
+  "name": "02-next-hasura",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@heroicons/react": "^1.0.4",
+    "@reduxjs/toolkit": "^1.6.2",
+    "firebase": "8.10.0",
+    "graphql": "^15.6.1",
+    "graphql-request": "^3.5.0",
+    "next": "11.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-query": "^3.26.0",
+    "react-query-devtools": "^2.6.3",
+    "react-redux": "^7.2.5",
+    "universal-cookie": "^4.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^16.10.3",
+    "@types/react": "^17.0.27",
+    "@types/react-redux": "^7.1.19",
+    "autoprefixer": "^10.3.7",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2",
+    "postcss": "^8.3.9",
+    "tailwindcss": "^2.2.16",
+    "typescript": "^4.4.3"
+  }
+}
