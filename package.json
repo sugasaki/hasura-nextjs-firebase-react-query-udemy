@@ -11,7 +11,7 @@
   "dependencies": {
     "@heroicons/react": "^1.0.4",
     "@reduxjs/toolkit": "^1.6.2",
-    "firebase": "8.10.0",
+    "firebase": "^9.0.1",
     "graphql": "^15.6.1",
     "graphql-request": "^3.5.0",
     "next": "11.1.2",
